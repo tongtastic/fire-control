@@ -2,7 +2,7 @@
 
 3D printed HPA engine running v1 FCU code. Two stage trigger similar to Steyr AUG, 11.1v lipo battery, Arduino Nano, HPA solenoid and temporary printed clasp to hold it all together. Tried only low RPS so far.
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/vd2LqTkdPmA/0.jpg)](http://www.youtube.com/watch?v=vd2LqTkdPmA)
+[![IMAGE](http://img.youtube.com/vi/vd2LqTkdPmA/0.jpg)](http://www.youtube.com/watch?v=vd2LqTkdPmA)
 
 # Designs
 
