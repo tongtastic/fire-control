@@ -1,11 +1,11 @@
 
-int DWELL = 20;
-int RATE = 30;
-int SOLENOID = 2;
-int SEMI = A4;
-int FULLAUTO = A5;
-int SEMISTATE = LOW;
-int SEMISTATUS = LOW;
+int DWELL = 20; // how long to open solenoid ms
+int RATE = 30; // how long to wait after closing solenoid ms
+int SOLENOID = 2; // solenoid control pin
+int SEMI = A4; // semi auto switch pin
+int FULLAUTO = A5; // full auto switch pin
+int SEMISTATE = LOW; // start state of semi switch
+int SEMISTATUS = LOW; // current state of semi switch
 
 void setup()
 {
@@ -18,28 +18,28 @@ void setup()
 void loop()
 {
 
-  SEMISTATE = digitalRead( SEMI );
+  SEMISTATE = digitalRead( SEMI ); // read current status of semi switch
   
-  if( SEMISTATUS != SEMISTATE )
+  if( SEMISTATUS != SEMISTATE ) // not the same as last / start status (must be LOW)
   {
 
-    if( SEMISTATE == LOW ) {
+    if( SEMISTATE == LOW ) { // switch is closed
 
-      semiAuto();
+      semiAuto(); // fire semi auto shot
 
     }
 
-    delay( 50 );
+    delay( 50 ); // wait to prevent the switch bouncing
 
-    SEMISTATUS = SEMISTATE;
+    SEMISTATUS = SEMISTATE; // set current state to current trigger state
 
   }
   
 
-  if( digitalRead( FULLAUTO ) == LOW )
+  if( digitalRead( FULLAUTO ) == LOW ) // full auto switch is closed
   {
 
-    fullAuto();
+    fullAuto(); // fire full auto
 
   }
   
@@ -48,29 +48,29 @@ void loop()
 void semiAuto()
 {
 
-  digitalWrite( SOLENOID, HIGH );
+  digitalWrite( SOLENOID, HIGH ); // open solenoid
 
-  delay( DWELL );
+  delay( DWELL ); // wait to clear barrel
 
-  digitalWrite( SOLENOID, LOW );
+  digitalWrite( SOLENOID, LOW ); // close solenoid
   
 }
 
 void fullAuto()
 {
 
-  digitalWrite( SOLENOID, HIGH );
+  digitalWrite( SOLENOID, HIGH ); // open solenoid
 
-  delay( DWELL );
+  delay( DWELL ); // wait to clear barrel
 
-  digitalWrite( SOLENOID, LOW );
+  digitalWrite( SOLENOID, LOW ); // close soleniod
 
-  delay( RATE );
+  delay( RATE ); // wait for next shot
 
-  if( digitalRead( FULLAUTO ) == LOW )
+  if( digitalRead( FULLAUTO ) == LOW ) // if trigger is still pulled
   {
 
-    fullAuto();
+    fullAuto(); // call function again
 
   }
 
