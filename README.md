@@ -1,4 +1,4 @@
-# Arduino FCU for Airsoft HPA Engine
+# Arduino FCU for 3D Printed Airsoft HPA Engine
 
 3D printed HPA engine running v1 FCU code. Two stage trigger similar to Steyr AUG, 11.1v lipo battery, Arduino Nano, HPA solenoid and temporary printed clasp to hold it all together. Tried only low RPS so far.
 
