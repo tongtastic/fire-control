@@ -8,7 +8,7 @@
 
 Using a set of 3D printed mounts to enable hop up chamber testing. Means I can measure the perfect distance between the hopup chamber and nozzle resting point.
 
-[Thing on Thingiverse](https://www.thingiverse.com/thing:2850914)
+[![IMAGE](https://cdn.thingiverse.com/renders/83/09/9c/5d/85/23d756265b5fb482464d26b0411d2c6b_preview_featured.jpg)](https://www.thingiverse.com/thing:2850914)
 
 # Designs
 
