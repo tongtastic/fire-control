@@ -4,6 +4,12 @@
 
 [![IMAGE](http://img.youtube.com/vi/vd2LqTkdPmA/0.jpg)](http://www.youtube.com/watch?v=vd2LqTkdPmA)
 
+# Testing
+
+Using a set of 3D printed mounts to enable hop up chamber testing. Means I can measure the perfect distance between the hopup chamber and nozzle resting point.
+
+[Thing on Thingiverse](https://www.thingiverse.com/thing:2850914)
+
 # Designs
 
 3D printed sub machine gun idea, shot counter mounted behind rail.
